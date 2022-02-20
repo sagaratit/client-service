@@ -1,0 +1,2 @@
+insert into client(`id`,`email`,`password`,`name`,`loggedin`) values('asfgt-uy676-iu87-oi89','sagar@gmail.com','c2FnYXI=','sagar',0);
+insert into client(`id`,`email`,`password`,`name`,`loggedin`) values('hgftr-uy676-iu87-gh54','mark@gmail.com','YWJj','abc',0);

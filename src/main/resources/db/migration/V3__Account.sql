@@ -1,0 +1,14 @@
+drop table IF EXISTS ACCOUNT;
+
+create table `ACCOUNT`(
+   `account_id` INTEGER auto_increment NOT NULL,
+   `account_type` VARCHAR(50),
+  `balance` DOUBLE(20) NOT NULL DEFAULT 0,
+  `debt` DOUBLE(20) NOT NULL DEFAULT 0,
+  `client_id` VARCHAR(150) NOT NULL
+);
+-- SET PRIMARY KEY
+alter table ACCOUNT add CONSTRAINT ACCOUNT_ID_1 PRIMARY KEY(account_id);
+-- SETUP INDEXES  ------------------------
+create INDEX ACCOUNT_INDEX ON ACCOUNT(balance);
+ALTER TABLE CLIENT ADD CONSTRAINT CLIENT_ID_4_FK FOREIGN KEY(ID) REFERENCES CLIENT(ID) NOCHECK;

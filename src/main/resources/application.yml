@@ -1,0 +1,2 @@
+##flyway
+spring.flyway.enabled=true
